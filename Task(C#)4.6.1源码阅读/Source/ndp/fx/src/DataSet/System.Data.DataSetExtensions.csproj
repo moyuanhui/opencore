@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition="'$(Configuration)' == ''">Debug</Configuration>
+    <Platform Condition="'$(Platform)' == ''">AnyCPU</Platform>
+    <ProjectGuid>{b2a90663-49cd-4a75-a8a8-862d6827e368}</ProjectGuid>
+    <OutputPath>.</OutputPath>
+    <OutputType>Library</OutputType>
+    <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
+    <UseVSHostingProcess>False</UseVSHostingProcess>
+    <NoStdLib>True</NoStdLib>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <DefineConstants>CODE_ANALYSIS_BASELINE;FEATURE_LEGACYSURFACEAREA;FEATURE_UTF32;FEATURE_UTF7;SYSTEM_DATA_ENTITY;TRACE;RETAIL;WIN32</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' " >
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\clr\src\bcl\mscorlib.csproj">
+      <Project>{67c368de-3511-4106-8749-000d91efd3fc}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.csproj">
+      <Project>{54e500cb-cdce-4405-9ac7-200d8982ccd8}</Project>
+      <Name>System</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Core\System.Core.csproj">
+      <Project>{882677bb-a7dc-49f6-ab02-c7aff5befd7a}</Project>
+      <Name>System.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\data\System.Data.csproj">
+      <Project>{106e67ed-066e-453f-8be9-df69cbc14bef}</Project>
+      <Name>System.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xml\System.Xml.csproj">
+      <Project>{7eccbad4-f184-4260-b750-d5c802c948d8}</Project>
+      <Name>System.Xml</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="System\Data\DataRowComparer.cs" />
+    <Compile Include="System\Data\DataRowExtensions.cs" />
+    <Compile Include="System\Data\DataSetUtil.cs" />
+    <Compile Include="System\Data\DataTableExtensions.cs" />
+    <Compile Include="System\Data\EnumerableRowCollection.cs" />
+    <Compile Include="System\Data\EnumerableRowCollectionExtensions.cs" />
+    <Compile Include="System\Data\LinqDataView.cs" />
+    <Compile Include="System\Data\OrderedEnumerableRowCollection.cs" />
+    <Compile Include="System\Data\ShippingAssemblyAttribute.cs" />
+    <Compile Include="System\Data\SortExpressionBuilder.cs" />
+    <Compile Include="System\Data\TypedTableBase.cs" />
+    <Compile Include="System\Data\TypedTableBaseExtensions.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

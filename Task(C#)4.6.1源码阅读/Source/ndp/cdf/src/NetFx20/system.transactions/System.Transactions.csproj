@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition="'$(Configuration)' == ''">Debug</Configuration>
+    <Platform Condition="'$(Platform)' == ''">AnyCPU</Platform>
+    <ProjectGuid>{24807d62-c423-48dd-931b-a618672cce83}</ProjectGuid>
+    <OutputPath>.</OutputPath>
+    <OutputType>Library</OutputType>
+    <AssemblyName>System.Transactions</AssemblyName>
+    <UseVSHostingProcess>False</UseVSHostingProcess>
+    <NoStdLib>True</NoStdLib>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <DefineConstants>CODE_ANALYSIS_BASELINE;TRACE;RETAIL;WIN32</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' " >
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\clr\src\bcl\mscorlib.csproj">
+      <Project>{67c368de-3511-4106-8749-000d91efd3fc}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\fx\src\System.csproj">
+      <Project>{54e500cb-cdce-4405-9ac7-200d8982ccd8}</Project>
+      <Name>System</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\fx\src\Configuration\System.Configuration.csproj">
+      <Project>{d055238a-9098-47e9-8d76-70acbfa31ac3}</Project>
+      <Name>System.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\fx\src\Core\System.Core.csproj">
+      <Project>{882677bb-a7dc-49f6-ab02-c7aff5befd7a}</Project>
+      <Name>System.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\clr\src\managedlibraries\security\System.Security.csproj">
+      <Project>{491b9884-e83b-40cf-bc81-9f30a8847434}</Project>
+      <Name>System.Security</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\fx\src\Xml\System.Xml.csproj">
+      <Project>{7eccbad4-f184-4260-b750-d5c802c948d8}</Project>
+      <Name>System.Xml</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\inc\PrivilegedConfigurationManager.cs" />
+    <Compile Include="System\Transactions\CommittableTransaction.cs" />
+    <Compile Include="System\Transactions\Configuration\AppSettings.cs" />
+    <Compile Include="System\Transactions\Configuration\ConfigurationStrings.cs" />
+    <Compile Include="System\Transactions\Configuration\DefaultSettingsSection.cs" />
+    <Compile Include="System\Transactions\Configuration\MachineSettingsSection.cs" />
+    <Compile Include="System\Transactions\Configuration\TransactionsSectionGroup.cs" />
+    <Compile Include="System\Transactions\DependentTransaction.cs" />
+    <Compile Include="System\Transactions\DistributedTransactionPermission.cs" />
+    <Compile Include="System\Transactions\DurableEnlistmentState.cs" />
+    <Compile Include="System\Transactions\Enlistment.cs" />
+    <Compile Include="System\Transactions\EnlistmentState.cs" />
+    <Compile Include="System\Transactions\EnlistmentTraceIdentifier.cs" />
+    <Compile Include="System\Transactions\IEnlistmentNotification.cs" />
+    <Compile Include="System\Transactions\InternalTransaction.cs" />
+    <Compile Include="System\Transactions\IPromotableSinglePhaseNotification.cs" />
+    <Compile Include="System\Transactions\ISimpleTransactionSuperior.cs" />
+    <Compile Include="System\Transactions\ISinglePhaseNotification.cs" />
+    <Compile Include="System\Transactions\ITransactionPromoter.cs" />
+    <Compile Include="System\Transactions\ModuleSuppressions.cs" />
+    <Compile Include="System\Transactions\Oletx\CoTaskMemHandle.cs" />
+    <Compile Include="System\Transactions\Oletx\DtcInterfaces.cs" />
+    <Compile Include="System\Transactions\Oletx\DTCTransactionManager.cs" />
+    <Compile Include="System\Transactions\Oletx\HandleTable.cs" />
+    <Compile Include="System\Transactions\Oletx\OletxCommittableTransaction.cs" />
+    <Compile Include="System\Transactions\Oletx\OletxDependentTransaction.cs" />
+    <Compile Include="System\Transactions\Oletx\OletxEnlistment.cs" />
+    <Compile Include="System\Transactions\Oletx\OletxResourceManager.cs" />
+    <Compile Include="System\Transactions\Oletx\OleTxTransaction.cs" />
+    <Compile Include="System\Transactions\Oletx\OletxTransactionManager.cs" />
+    <Compile Include="System\Transactions\Oletx\OletxVolatileEnlistment.cs" />
+    <Compile Include="System\Transactions\PreparingEnlistment.cs" />
+    <Compile Include="System\Transactions\SafeIUnknown.cs" />
+    <Compile Include="System\Transactions\SinglePhaseEnlistment.cs" />
+    <Compile Include="System\Transactions\SubordinateTransaction.cs" />
+    <Compile Include="System\Transactions\Trace\Activity.cs" />
+    <Compile Include="System\Transactions\Trace\DiagnosticStrings.cs" />
+    <Compile Include="System\Transactions\Trace\DiagnosticTrace.cs" />
+    <Compile Include="System\Transactions\Trace\DiagnosticTraceCode.cs" />
+    <Compile Include="System\Transactions\Trace\PlainXmlWriter.cs" />
+    <Compile Include="System\Transactions\Trace\TraceCode.cs" />
+    <Compile Include="System\Transactions\Trace\TraceRecord.cs" />
+    <Compile Include="System\Transactions\Trace\TraceRecords.cs" />
+    <Compile Include="System\Transactions\Trace\TraceXPathNavigator.cs" />
+    <Compile Include="System\Transactions\Transaction.cs" />
+    <Compile Include="System\Transactions\TransactionException.cs" />
+    <Compile Include="System\Transactions\TransactionInformation.cs" />
+    <Compile Include="System\Transactions\TransactionInterop.cs" />
+    <Compile Include="System\Transactions\TransactionManager.cs" />
+    <Compile Include="System\Transactions\TransactionOptions.cs" />
+    <Compile Include="System\Transactions\TransactionScope.cs" />
+    <Compile Include="System\Transactions\TransactionState.cs" />
+    <Compile Include="System\Transactions\TransactionTable.cs" />
+    <Compile Include="System\Transactions\TransactionTraceIdentifier.cs" />
+    <Compile Include="System\Transactions\VolatileEnlistmentMultiplexing.cs" />
+    <Compile Include="System\Transactions\VolatileEnlistmentState.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

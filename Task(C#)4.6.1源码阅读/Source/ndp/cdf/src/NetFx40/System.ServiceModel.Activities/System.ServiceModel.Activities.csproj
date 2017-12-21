@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition="'$(Configuration)' == ''">Debug</Configuration>
+    <Platform Condition="'$(Platform)' == ''">AnyCPU</Platform>
+    <ProjectGuid>{16696157-2320-4160-8c79-23955002c00f}</ProjectGuid>
+    <OutputPath>.</OutputPath>
+    <OutputType>Library</OutputType>
+    <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+    <UseVSHostingProcess>False</UseVSHostingProcess>
+    <NoStdLib>True</NoStdLib>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <DefineConstants>CODE_ANALYSIS_BASELINE;TRACE;RETAIL;WIN32</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' " >
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\clr\src\bcl\mscorlib.csproj">
+      <Project>{67c368de-3511-4106-8749-000d91efd3fc}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WCF\SMDiagnostics\SMDiagnostics.csproj">
+      <Project>{d79516c9-1e27-407c-a2a3-554e4b7f8152}</Project>
+      <Name>SMDiagnostics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\fx\src\System.csproj">
+      <Project>{54e500cb-cdce-4405-9ac7-200d8982ccd8}</Project>
+      <Name>System</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Activities\System.Activities.csproj">
+      <Project>{39bfd5f6-53a2-4262-8a94-e469f21a1171}</Project>
+      <Name>System.Activities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Activities.DurableInstancing\System.Activities.DurableInstancing.csproj">
+      <Project>{4dd931f9-c94a-4a09-b349-8da2120e6f41}</Project>
+      <Name>System.Activities.DurableInstancing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\fx\src\Configuration\System.Configuration.csproj">
+      <Project>{d055238a-9098-47e9-8d76-70acbfa31ac3}</Project>
+      <Name>System.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\fx\src\Core\System.Core.csproj">
+      <Project>{882677bb-a7dc-49f6-ab02-c7aff5befd7a}</Project>
+      <Name>System.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\fx\src\data\System.Data.csproj">
+      <Project>{106e67ed-066e-453f-8be9-df69cbc14bef}</Project>
+      <Name>System.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WCF\IdentityModel\System.IdentityModel.csproj">
+      <Project>{2452bcc2-9962-4fa1-aa6d-4efb0def3e36}</Project>
+      <Name>System.IdentityModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Runtime.DurableInstancing\System.Runtime.DurableInstancing.csproj">
+      <Project>{04a07d45-5b57-41c8-ad85-2cdc855b6d2d}</Project>
+      <Name>System.Runtime.DurableInstancing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WCF\Serialization\System.Runtime.Serialization.csproj">
+      <Project>{fb62044e-37ce-49b0-b512-41dd95afb456}</Project>
+      <Name>System.Runtime.Serialization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\clr\src\managedlibraries\security\System.Security.csproj">
+      <Project>{491b9884-e83b-40cf-bc81-9f30a8847434}</Project>
+      <Name>System.Security</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WCF\ServiceModel\System.ServiceModel.csproj">
+      <Project>{0119599c-febb-4395-bb42-292dc76201cc}</Project>
+      <Name>System.ServiceModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\System.ServiceModel.Internals\System.ServiceModel.Internals.csproj">
+      <Project>{9d91f452-0441-451a-8036-fc665dcd0595}</Project>
+      <Name>System.ServiceModel.Internals</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NetFx20\System.Transactions\System.Transactions.csproj">
+      <Project>{24807d62-c423-48dd-931b-a618672cce83}</Project>
+      <Name>System.Transactions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\fx\src\Xml\System.Xml.csproj">
+      <Project>{7eccbad4-f184-4260-b750-d5c802c948d8}</Project>
+      <Name>System.Xml</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\fx\src\XLinq\System.Xml.Linq.csproj">
+      <Project>{abc2facf-2e3a-4fdc-aff3-5d0f1e993027}</Project>
+      <Name>System.Xml.Linq</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="SuppressMessages.cs" />
+    <Compile Include="System\ServiceModel\Activities\AppSettings.cs" />
+    <Compile Include="System\ServiceModel\Activities\BookmarkNameHelper.cs" />
+    <Compile Include="System\ServiceModel\Activities\CallbackCorrelationInitializer.cs" />
+    <Compile Include="System\ServiceModel\Activities\ChannelCacheDefaults.cs" />
+    <Compile Include="System\ServiceModel\Activities\ChannelCacheSettings.cs" />
+    <Compile Include="System\ServiceModel\Activities\ClientOperationFormatterProvider.cs" />
+    <Compile Include="System\ServiceModel\Activities\Configuration\BufferedReceiveElement.cs" />
+    <Compile Include="System\ServiceModel\Activities\Configuration\ChannelSettingsElement.cs" />
+    <Compile Include="System\ServiceModel\Activities\Configuration\ConfigurationStrings.cs" />
+    <Compile Include="System\ServiceModel\Activities\Configuration\EtwTrackingBehaviorElement.cs" />
+    <Compile Include="System\ServiceModel\Activities\Configuration\FactorySettingsElement.cs" />
+    <Compile Include="System\ServiceModel\Activities\Configuration\SendMessageChannelCacheElement.cs" />
+    <Compile Include="System\ServiceModel\Activities\Configuration\ServiceModelActivitiesEnumValidator.cs" />
+    <Compile Include="System\ServiceModel\Activities\Configuration\ServiceModelActivitiesEnumValidatorAttribute.cs" />
+    <Compile Include="System\ServiceModel\Activities\Configuration\ServiceModelActivitiesSectionGroup.cs" />
+    <Compile Include="System\ServiceModel\Activities\Configuration\SqlWorkflowInstanceStoreElement.cs" />
+    <Compile Include="System\ServiceModel\Activities\Configuration\WorkflowControlEndpointCollectionElement.cs" />
+    <Compile Include="System\ServiceModel\Activities\Configuration\WorkflowControlEndpointElement.cs" />
+    <Compile Include="System\ServiceModel\Activities\Configuration\WorkflowHostingOptionsSection.cs" />
+    <Compile Include="System\ServiceModel\Activities\Configuration\WorkflowIdleElement.cs" />
+    <Compile Include="System\ServiceModel\Activities\Configuration\WorkflowInstanceManagementElement.cs" />
+    <Compile Include="System\ServiceModel\Activities\Configuration\WorkflowUnhandledExceptionElement.cs" />
+    <Compile Include="System\ServiceModel\Activities\Constants.cs" />
+    <Compile Include="System\ServiceModel\Activities\ContextCorrelationInitializer.cs" />
+    <Compile Include="System\ServiceModel\Activities\ContractInferenceHelper.cs" />
+    <Compile Include="System\ServiceModel\Activities\ContractValidationHelper.cs" />
+    <Compile Include="System\ServiceModel\Activities\CorrelationCallbackContext.cs" />
+    <Compile Include="System\ServiceModel\Activities\CorrelationContext.cs" />
+    <Compile Include="System\ServiceModel\Activities\CorrelationExtension.cs" />
+    <Compile Include="System\ServiceModel\Activities\CorrelationHandle.cs" />
+    <Compile Include="System\ServiceModel\Activities\CorrelationInitializer.cs" />
+    <Compile Include="System\ServiceModel\Activities\CorrelationInitializerCollectionExtensions.cs" />
+    <Compile Include="System\ServiceModel\Activities\CorrelationRequestContext.cs" />
+    <Compile Include="System\ServiceModel\Activities\CorrelationResponseContext.cs" />
+    <Compile Include="System\ServiceModel\Activities\CorrelationScope.cs" />
+    <Compile Include="System\ServiceModel\Activities\Description\BufferedReceiveServiceBehavior.cs" />
+    <Compile Include="System\ServiceModel\Activities\Description\ControlOperationBehavior.cs" />
+    <Compile Include="System\ServiceModel\Activities\Description\CorrelationQueryBehavior.cs" />
+    <Compile Include="System\ServiceModel\Activities\Description\DurableConsistencyScope.cs" />
+    <Compile Include="System\ServiceModel\Activities\Description\EtwTrackingBehavior.cs" />
+    <Compile Include="System\ServiceModel\Activities\Description\SendMessageChannelCacheBehavior.cs" />
+    <Compile Include="System\ServiceModel\Activities\Description\ServiceDescriptionData.cs" />
+    <Compile Include="System\ServiceModel\Activities\Description\SqlWorkflowInstanceStoreBehavior.cs" />
+    <Compile Include="System\ServiceModel\Activities\Description\WorkflowContractBehaviorAttribute.cs" />
+    <Compile Include="System\ServiceModel\Activities\Description\WorkflowFormatterBehavior.cs" />
+    <Compile Include="System\ServiceModel\Activities\Description\WorkflowIdleBehavior.cs" />
+    <Compile Include="System\ServiceModel\Activities\Description\WorkflowInstanceManagementBehavior.cs" />
+    <Compile Include="System\ServiceModel\Activities\Description\WorkflowOperationBehavior.cs" />
+    <Compile Include="System\ServiceModel\Activities\Description\WorkflowServiceBehavior.cs" />
+    <Compile Include="System\ServiceModel\Activities\Description\WorkflowUnhandledExceptionAction.cs" />
+    <Compile Include="System\ServiceModel\Activities\Description\WorkflowUnhandledExceptionBehavior.cs" />
+    <Compile Include="System\ServiceModel\Activities\Diagnostics\WorkflowServiceHostPerformanceCounters.cs" />
+    <Compile Include="System\ServiceModel\Activities\Dispatcher\BufferedReceiveManager.cs" />
+    <Compile Include="System\ServiceModel\Activities\Dispatcher\BufferedReceiveState.cs" />
+    <Compile Include="System\ServiceModel\Activities\Dispatcher\ControlOperationInvoker.cs" />
+    <Compile Include="System\ServiceModel\Activities\Dispatcher\CorrelationKeyCalculator.cs" />
+    <Compile Include="System\ServiceModel\Activities\Dispatcher\DurableDispatcherAddressingFault.cs" />
+    <Compile Include="System\ServiceModel\Activities\Dispatcher\DurableInstanceContextProvider.cs" />
+    <Compile Include="System\ServiceModel\Activities\Dispatcher\DurableInstanceManager.cs" />
+    <Compile Include="System\ServiceModel\Activities\Dispatcher\DurableInstanceProvider.cs" />
+    <Compile Include="System\ServiceModel\Activities\Dispatcher\OperationExecutionFault.cs" />
+    <Compile Include="System\ServiceModel\Activities\Dispatcher\OptionalMessageQuery.cs" />
+    <Compile Include="System\ServiceModel\Activities\Dispatcher\PersistenceContext.cs" />
+    <Compile Include="System\ServiceModel\Activities\Dispatcher\PersistenceContextEnlistment.cs" />
+    <Compile Include="System\ServiceModel\Activities\Dispatcher\PersistenceProviderDirectory.cs" />
+    <Compile Include="System\ServiceModel\Activities\Dispatcher\SaveStatus.cs" />
+    <Compile Include="System\ServiceModel\Activities\Dispatcher\TransactionContext.cs" />
+    <Compile Include="System\ServiceModel\Activities\Dispatcher\TransactionWaitAsyncResult.cs" />
+    <Compile Include="System\ServiceModel\Activities\Dispatcher\WorkflowServiceInstance.cs" />
+    <Compile Include="System\ServiceModel\Activities\Dispatcher\WorkflowSynchronizationContext.cs" />
+    <Compile Include="System\ServiceModel\Activities\DurableInstancingOptions.cs" />
+    <Compile Include="System\ServiceModel\Activities\FromReply.cs" />
+    <Compile Include="System\ServiceModel\Activities\FromRequest.cs" />
+    <Compile Include="System\ServiceModel\Activities\HostSettings.cs" />
+    <Compile Include="System\ServiceModel\Activities\InitializeCorrelation.cs" />
+    <Compile Include="System\ServiceModel\Activities\InternalReceiveMessage.cs" />
+    <Compile Include="System\ServiceModel\Activities\InternalSendMessage.cs" />
+    <Compile Include="System\ServiceModel\Activities\IReceiveMessageCallback.cs" />
+    <Compile Include="System\ServiceModel\Activities\ISendMessageCallback.cs" />
+    <Compile Include="System\ServiceModel\Activities\IWorkflowInstanceManagement.cs" />
+    <Compile Include="System\ServiceModel\Activities\MessageBuilder.cs" />
+    <Compile Include="System\ServiceModel\Activities\MessageContext.cs" />
+    <Compile Include="System\ServiceModel\Activities\MessagingActivityHelper.cs" />
+    <Compile Include="System\ServiceModel\Activities\MessagingNoPersistScope.cs" />
+    <Compile Include="System\ServiceModel\Activities\NoPersistScope.cs" />
+    <Compile Include="System\ServiceModel\Activities\OperationIdentifier.cs" />
+    <Compile Include="System\ServiceModel\Activities\OperationProperty.cs" />
+    <Compile Include="System\ServiceModel\Activities\QueryCorrelationInitializer.cs" />
+    <Compile Include="System\ServiceModel\Activities\Receive.cs" />
+    <Compile Include="System\ServiceModel\Activities\ReceiveContent.cs" />
+    <Compile Include="System\ServiceModel\Activities\ReceiveMessageContent.cs" />
+    <Compile Include="System\ServiceModel\Activities\ReceiveParametersContent.cs" />
+    <Compile Include="System\ServiceModel\Activities\ReceiveReply.cs" />
+    <Compile Include="System\ServiceModel\Activities\ReceiveSettings.cs" />
+    <Compile Include="System\ServiceModel\Activities\RequestReplyCorrelationInitializer.cs" />
+    <Compile Include="System\ServiceModel\Activities\Send.cs" />
+    <Compile Include="System\ServiceModel\Activities\SendContent.cs" />
+    <Compile Include="System\ServiceModel\Activities\SendMessageChannelCache.cs" />
+    <Compile Include="System\ServiceModel\Activities\SendMessageContent.cs" />
+    <Compile Include="System\ServiceModel\Activities\SendParametersContent.cs" />
+    <Compile Include="System\ServiceModel\Activities\SendReceiveExtension.cs" />
+    <Compile Include="System\ServiceModel\Activities\SendReply.cs" />
+    <Compile Include="System\ServiceModel\Activities\SendSettings.cs" />
+    <Compile Include="System\ServiceModel\Activities\SerializableInstanceKey.cs" />
+    <Compile Include="System\ServiceModel\Activities\SerializableInstanceValue.cs" />
+    <Compile Include="System\ServiceModel\Activities\SerializerOption.cs" />
+    <Compile Include="System\ServiceModel\Activities\ServiceOperationFormatterProvider.cs" />
+    <Compile Include="System\ServiceModel\Activities\ToReply.cs" />
+    <Compile Include="System\ServiceModel\Activities\ToRequest.cs" />
+    <Compile Include="System\ServiceModel\Activities\Tracking\Configuration\ActivityScheduledQueryElement.cs" />
+    <Compile Include="System\ServiceModel\Activities\Tracking\Configuration\ActivityScheduledQueryElementCollection.cs" />
+    <Compile Include="System\ServiceModel\Activities\Tracking\Configuration\ActivityStateQueryElement.cs" />
+    <Compile Include="System\ServiceModel\Activities\Tracking\Configuration\ActivityStateQueryElementCollection.cs" />
+    <Compile Include="System\ServiceModel\Activities\Tracking\Configuration\AnnotationElement.cs" />
+    <Compile Include="System\ServiceModel\Activities\Tracking\Configuration\AnnotationElementCollection.cs" />
+    <Compile Include="System\ServiceModel\Activities\Tracking\Configuration\ArgumentElement.cs" />
+    <Compile Include="System\ServiceModel\Activities\Tracking\Configuration\ArgumentElementCollection.cs" />
+    <Compile Include="System\ServiceModel\Activities\Tracking\Configuration\BookmarkResumptionQueryElement.cs" />
+    <Compile Include="System\ServiceModel\Activities\Tracking\Configuration\BookmarkResumptionQueryElementCollection.cs" />
+    <Compile Include="System\ServiceModel\Activities\Tracking\Configuration\CancelRequestedQueryElement.cs" />
+    <Compile Include="System\ServiceModel\Activities\Tracking\Configuration\CancelRequestedQueryElementCollection.cs" />
+    <Compile Include="System\ServiceModel\Activities\Tracking\Configuration\CustomTrackingQueryElement.cs" />
+    <Compile Include="System\ServiceModel\Activities\Tracking\Configuration\CustomTrackingQueryElementCollection.cs" />
+    <Compile Include="System\ServiceModel\Activities\Tracking\Configuration\FaultPropagationQueryElement.cs" />
+    <Compile Include="System\ServiceModel\Activities\Tracking\Configuration\FaultPropagationQueryElementCollection.cs" />
+    <Compile Include="System\ServiceModel\Activities\Tracking\Configuration\ImplementationVisibilityHelper.cs" />
+    <Compile Include="System\ServiceModel\Activities\Tracking\Configuration\ProfileElement.cs" />
+    <Compile Include="System\ServiceModel\Activities\Tracking\Configuration\ProfileElementCollection.cs" />
+    <Compile Include="System\ServiceModel\Activities\Tracking\Configuration\ProfileWorkflowElement.cs" />
+    <Compile Include="System\ServiceModel\Activities\Tracking\Configuration\ProfileWorkflowElementCollection.cs" />
+    <Compile Include="System\ServiceModel\Activities\Tracking\Configuration\StateElement.cs" />
+    <Compile Include="System\ServiceModel\Activities\Tracking\Configuration\StateElementCollection.cs" />
+    <Compile Include="System\ServiceModel\Activities\Tracking\Configuration\StateMachineStateQueryElement.cs" />
+    <Compile Include="System\ServiceModel\Activities\Tracking\Configuration\StateMachineStateQueryElementCollection.cs" />
+    <Compile Include="System\ServiceModel\Activities\Tracking\Configuration\TrackingConfigurationCollection.cs" />
+    <Compile Include="System\ServiceModel\Activities\Tracking\Configuration\TrackingConfigurationElement.cs" />
+    <Compile Include="System\ServiceModel\Activities\Tracking\Configuration\TrackingConfigurationStrings.cs" />
+    <Compile Include="System\ServiceModel\Activities\Tracking\Configuration\TrackingQueryElement.cs" />
+    <Compile Include="System\ServiceModel\Activities\Tracking\Configuration\TrackingSection.cs" />
+    <Compile Include="System\ServiceModel\Activities\Tracking\Configuration\VariableElement.cs" />
+    <Compile Include="System\ServiceModel\Activities\Tracking\Configuration\VariableElementCollection.cs" />
+    <Compile Include="System\ServiceModel\Activities\Tracking\Configuration\WorkflowInstanceQueryElement.cs" />
+    <Compile Include="System\ServiceModel\Activities\Tracking\Configuration\WorkflowInstanceQueryElementCollection.cs" />
+    <Compile Include="System\ServiceModel\Activities\Tracking\DefaultProfileManager.cs" />
+    <Compile Include="System\ServiceModel\Activities\Tracking\ReceiveMessageRecord.cs" />
+    <Compile Include="System\ServiceModel\Activities\Tracking\SendMessageRecord.cs" />
+    <Compile Include="System\ServiceModel\Activities\Tracking\TrackingProfileManager.cs" />
+    <Compile Include="System\ServiceModel\Activities\TransactedReceiveData.cs" />
+    <Compile Include="System\ServiceModel\Activities\TransactedReceiveScope.cs" />
+    <Compile Include="System\ServiceModel\Activities\WorkflowControlClient.cs" />
+    <Compile Include="System\ServiceModel\Activities\WorkflowControlEndpoint.cs" />
+    <Compile Include="System\ServiceModel\Activities\WorkflowCreationContext.cs" />
+    <Compile Include="System\ServiceModel\Activities\WorkflowDefinitionProvider.cs" />
+    <Compile Include="System\ServiceModel\Activities\WorkflowGetInstanceContext.cs" />
+    <Compile Include="System\ServiceModel\Activities\WorkflowHostingEndpoint.cs" />
+    <Compile Include="System\ServiceModel\Activities\WorkflowHostingResponseContext.cs" />
+    <Compile Include="System\ServiceModel\Activities\WorkflowIdentityKey.cs" />
+    <Compile Include="System\ServiceModel\Activities\WorkflowOperationContext.cs" />
+    <Compile Include="System\ServiceModel\Activities\WorkflowService.cs" />
+    <Compile Include="System\ServiceModel\Activities\WorkflowServiceHost.cs" />
+    <Compile Include="System\ServiceModel\Activities\WorkflowUpdateableControlClient.cs" />
+    <Compile Include="System\ServiceModel\CorrelationActionMessageFilter.cs" />
+    <Compile Include="System\ServiceModel\CorrelationQuery.cs" />
+    <Compile Include="System\ServiceModel\Endpoint.cs" />
+    <Compile Include="System\ServiceModel\MessageQuerySet.cs" />
+    <Compile Include="System\ServiceModel\XamlIntegration\EndpointIdentityConverter.cs" />
+    <Compile Include="System\ServiceModel\XamlIntegration\EndpointIdentityExtension.cs" />
+    <Compile Include="System\ServiceModel\XamlIntegration\ServiceXNameTypeConverter.cs" />
+    <Compile Include="System\ServiceModel\XamlIntegration\SpnEndpointIdentityExtension.cs" />
+    <Compile Include="System\ServiceModel\XamlIntegration\UpnEndpointIdentityExtension.cs" />
+    <Compile Include="System\ServiceModel\XamlIntegration\XNameTypeConverter.cs" />
+    <Compile Include="System\ServiceModel\XD.cs" />
+    <Compile Include="TD.Designer.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
