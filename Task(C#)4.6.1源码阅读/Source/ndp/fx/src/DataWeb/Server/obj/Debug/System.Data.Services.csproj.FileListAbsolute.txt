@@ -1,0 +1,1 @@
+E:\NETCore\opencore\Task(C#)4.6.1源码阅读\Source\ndp\fx\src\DataWeb\Server\obj\Debug\System.Data.Services.csproj.CoreCompileInputs.cache

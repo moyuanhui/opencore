@@ -1,0 +1,2 @@
+E:\NETCore\opencore\Task(C#)4.6.1源码阅读\Source\ndp\cdf\src\WCF\Tools\svcutil\obj\Debug\svcutil.csprojResolveAssemblyReference.cache
+E:\NETCore\opencore\Task(C#)4.6.1源码阅读\Source\ndp\cdf\src\WCF\Tools\svcutil\obj\Debug\svcutil.csproj.CoreCompileInputs.cache

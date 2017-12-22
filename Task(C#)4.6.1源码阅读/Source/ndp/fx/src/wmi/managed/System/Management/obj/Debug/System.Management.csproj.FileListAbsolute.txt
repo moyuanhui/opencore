@@ -1,0 +1,2 @@
+E:\NETCore\opencore\Task(C#)4.6.1源码阅读\Source\ndp\fx\src\wmi\managed\System\Management\obj\Debug\System.Management.csprojResolveAssemblyReference.cache
+E:\NETCore\opencore\Task(C#)4.6.1源码阅读\Source\ndp\fx\src\wmi\managed\System\Management\obj\Debug\System.Management.csproj.CoreCompileInputs.cache

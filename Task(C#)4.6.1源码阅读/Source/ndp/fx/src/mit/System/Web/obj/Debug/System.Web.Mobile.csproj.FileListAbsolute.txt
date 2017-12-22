@@ -1,0 +1,2 @@
+E:\NETCore\opencore\Task(C#)4.6.1源码阅读\Source\ndp\fx\src\mit\System\Web\obj\Debug\System.Web.Mobile.csprojResolveAssemblyReference.cache
+E:\NETCore\opencore\Task(C#)4.6.1源码阅读\Source\ndp\fx\src\mit\System\Web\obj\Debug\System.Web.Mobile.csproj.CoreCompileInputs.cache

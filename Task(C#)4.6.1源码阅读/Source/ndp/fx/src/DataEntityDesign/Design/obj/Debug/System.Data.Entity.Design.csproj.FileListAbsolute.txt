@@ -1,0 +1,2 @@
+E:\NETCore\opencore\Task(C#)4.6.1源码阅读\Source\ndp\fx\src\DataEntityDesign\Design\obj\Debug\System.Data.Entity.Design.csprojResolveAssemblyReference.cache
+E:\NETCore\opencore\Task(C#)4.6.1源码阅读\Source\ndp\fx\src\DataEntityDesign\Design\obj\Debug\System.Data.Entity.Design.csproj.CoreCompileInputs.cache

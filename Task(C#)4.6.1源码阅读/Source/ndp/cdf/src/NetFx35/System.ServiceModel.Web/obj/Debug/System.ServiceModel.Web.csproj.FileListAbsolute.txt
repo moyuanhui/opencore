@@ -1,0 +1,2 @@
+E:\NETCore\opencore\Task(C#)4.6.1源码阅读\Source\ndp\cdf\src\NetFx35\System.ServiceModel.Web\obj\Debug\System.ServiceModel.Web.csprojResolveAssemblyReference.cache
+E:\NETCore\opencore\Task(C#)4.6.1源码阅读\Source\ndp\cdf\src\NetFx35\System.ServiceModel.Web\obj\Debug\System.ServiceModel.Web.csproj.CoreCompileInputs.cache

@@ -1,0 +1,2 @@
+E:\NETCore\opencore\Task(C#)4.6.1源码阅读\Source\ndp\clr\src\managedlibraries\remoting\obj\Debug\System.Runtime.Remoting.csprojResolveAssemblyReference.cache
+E:\NETCore\opencore\Task(C#)4.6.1源码阅读\Source\ndp\clr\src\managedlibraries\remoting\obj\Debug\System.Runtime.Remoting.csproj.CoreCompileInputs.cache

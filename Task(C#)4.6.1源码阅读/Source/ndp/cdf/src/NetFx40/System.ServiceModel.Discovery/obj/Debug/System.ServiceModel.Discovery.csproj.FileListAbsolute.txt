@@ -1,0 +1,2 @@
+E:\NETCore\opencore\Task(C#)4.6.1源码阅读\Source\ndp\cdf\src\NetFx40\System.ServiceModel.Discovery\obj\Debug\System.ServiceModel.Discovery.csprojResolveAssemblyReference.cache
+E:\NETCore\opencore\Task(C#)4.6.1源码阅读\Source\ndp\cdf\src\NetFx40\System.ServiceModel.Discovery\obj\Debug\System.ServiceModel.Discovery.csproj.CoreCompileInputs.cache

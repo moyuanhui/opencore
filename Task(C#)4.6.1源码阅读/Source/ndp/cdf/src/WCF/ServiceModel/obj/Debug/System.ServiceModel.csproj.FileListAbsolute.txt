@@ -1,0 +1,2 @@
+E:\NETCore\opencore\Task(C#)4.6.1源码阅读\Source\ndp\cdf\src\WCF\ServiceModel\obj\Debug\System.ServiceModel.csprojResolveAssemblyReference.cache
+E:\NETCore\opencore\Task(C#)4.6.1源码阅读\Source\ndp\cdf\src\WCF\ServiceModel\obj\Debug\System.ServiceModel.csproj.CoreCompileInputs.cache

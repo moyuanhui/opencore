@@ -1,0 +1,2 @@
+E:\NETCore\opencore\Task(C#)4.6.1源码阅读\Source\ndp\cdf\src\NetFx20\System.Transactions\obj\Debug\System.Transactions.csprojResolveAssemblyReference.cache
+E:\NETCore\opencore\Task(C#)4.6.1源码阅读\Source\ndp\cdf\src\NetFx20\System.Transactions\obj\Debug\System.Transactions.csproj.CoreCompileInputs.cache
