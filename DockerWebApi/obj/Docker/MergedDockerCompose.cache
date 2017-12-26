@@ -1,0 +1,11 @@
+services:
+  dockerwebapi:
+    build:
+      context: E:\NETCore\opencore\DockerWebApi\DockerWebApi
+      dockerfile: Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: dockerwebapi
+    ports:
+    - 80/tcp
+version: '3.0'

@@ -1,0 +1,10 @@
+E:\NETCore\opencore\DockerWebApi\DockerWebApi\bin\Debug\netcoreapp2.0\DockerWebApi.deps.json
+E:\NETCore\opencore\DockerWebApi\DockerWebApi\bin\Debug\netcoreapp2.0\DockerWebApi.runtimeconfig.json
+E:\NETCore\opencore\DockerWebApi\DockerWebApi\bin\Debug\netcoreapp2.0\DockerWebApi.runtimeconfig.dev.json
+E:\NETCore\opencore\DockerWebApi\DockerWebApi\bin\Debug\netcoreapp2.0\DockerWebApi.dll
+E:\NETCore\opencore\DockerWebApi\DockerWebApi\bin\Debug\netcoreapp2.0\DockerWebApi.pdb
+E:\NETCore\opencore\DockerWebApi\DockerWebApi\obj\Debug\netcoreapp2.0\DockerWebApi.csproj.CoreCompileInputs.cache
+E:\NETCore\opencore\DockerWebApi\DockerWebApi\obj\Debug\netcoreapp2.0\DockerWebApi.AssemblyInfoInputs.cache
+E:\NETCore\opencore\DockerWebApi\DockerWebApi\obj\Debug\netcoreapp2.0\DockerWebApi.AssemblyInfo.cs
+E:\NETCore\opencore\DockerWebApi\DockerWebApi\obj\Debug\netcoreapp2.0\DockerWebApi.dll
+E:\NETCore\opencore\DockerWebApi\DockerWebApi\obj\Debug\netcoreapp2.0\DockerWebApi.pdb
