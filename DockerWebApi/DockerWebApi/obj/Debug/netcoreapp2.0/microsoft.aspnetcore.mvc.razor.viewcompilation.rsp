@@ -1,0 +1,5 @@
+E:\NETCore\opencore\DockerWebApi\DockerWebApi
+--output-path=obj\Debug\netcoreapp2.0\
+--application-name=DockerWebApi
+--content-root=E:\NETCore\opencore\DockerWebApi\DockerWebApi
+--file=
