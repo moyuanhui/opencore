@@ -40,5 +40,9 @@ namespace DockerWebApi.Controllers
         public void Delete(int id)
         {
         }
+		
+		public string GetMsg(){
+			return "1133";
+		}
     }
 }
